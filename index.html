@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="midnight">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Said Khalil Sadat — Logistics, Procurement &amp; Finance Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+
+  <!-- Floating Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-pill">
+      <a href="#home" class="nav-link" data-i18n="nav_home">Home</a>
+      <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+      <a href="#services" class="nav-link" data-i18n="nav_services">Services</a>
+      <a href="#projects" class="nav-link" data-i18n="nav_projects">Experience</a>
+      <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+      <a href="#education" class="nav-link" data-i18n="nav_education">Education</a>
+      <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="nav-controls">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span class="lang-active">EN</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-inactive">FA</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting" data-i18n="hero_greeting">Hello, I'm</p>
+        <h1 class="hero-name" data-i18n="hero_name">Said Khalil Sadat</h1>
+        <h2 class="hero-title" data-i18n="hero_title">Logistics, Procurement &amp; Finance Manager</h2>
+        <p class="hero-description" data-i18n="hero_desc"></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero_cta1">View Experience</a>
+          <a href="Said_Khalil_Sadat_CV.pdf" download class="btn btn-secondary" data-i18n="hero_cta2">Download CV</a>
+        </div>
+      </div>
+
+      <!-- Semicircle Theme Picker -->
+      <div class="theme-picker-wrapper">
+        <button class="theme-picker-toggle" id="themeToggle" aria-label="Change theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 3v18M3 12h18"/>
+          </svg>
+        </button>
+        <div class="theme-picker" id="themePicker">
+          <div class="theme-picker-bg"></div>
+          <div class="theme-options" id="themeOptions">
+            <!-- 12 theme dots will be injected by JS -->
+          </div>
+          <div class="theme-label" id="themeLabel">Dark</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span data-i18n="scroll">Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about_title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="avatar">
+            <!-- Replace images/about.jpg with your real photo. Filename must stay about.jpg. -->
+            <img
+              src="about.jpg"
+              alt="Said Khalil Sadat"
+              class="avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="avatar-inner" style="display:none;">SK</div>
+          </div>
+        </div>
+        <div class="about-content">
+          <h3 class="about-subtitle" data-i18n="about_subtitle"></h3>
+          <p data-i18n="about_p1"></p>
+          <p data-i18n="about_p2"></p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number">7+</div>
+              <div class="stat-label" data-i18n="stat_projects">Years of Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">9</div>
+              <div class="stat-label" data-i18n="stat_categories">Professional Roles</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">3</div>
+              <div class="stat-label" data-i18n="stat_certs">Languages</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services_title">What I Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📦</div>
+          <h3 data-i18n="service1_title"></h3>
+          <p data-i18n="service1_desc"></p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💰</div>
+          <h3 data-i18n="service2_title"></h3>
+          <p data-i18n="service2_desc"></p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧾</div>
+          <h3 data-i18n="service3_title"></h3>
+          <p data-i18n="service3_desc"></p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📑</div>
+          <h3 data-i18n="service4_title"></h3>
+          <p data-i18n="service4_desc"></p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🗣️</div>
+          <h3 data-i18n="service5_title"></h3>
+          <p data-i18n="service5_desc"></p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3 data-i18n="service6_title"></h3>
+          <p data-i18n="service6_desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title" data-i18n="projects_title">Career Experience</h2>
+      <p class="section-subtitle" data-i18n="projects_subtitle">Click any role to see details</p>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title" data-i18n="skills_title">Skills &amp; Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 data-i18n="skill_cat1">Management &amp; Leadership</h3>
+          <div class="skill-tags"><span class="skill-tag">Business Management</span><span class="skill-tag">Strategic Planning</span><span class="skill-tag">Team Leadership</span><span class="skill-tag">Decision-Making</span></div>
+        </div>
+        <div class="skill-category">
+          <h3 data-i18n="skill_cat2">Finance &amp; Accounting</h3>
+          <div class="skill-tags"><span class="skill-tag">Budget Monitoring</span><span class="skill-tag">Tax Declarations</span><span class="skill-tag">Payroll</span><span class="skill-tag">Financial Reporting</span><span class="skill-tag">Bank Reconciliation</span></div>
+        </div>
+        <div class="skill-category">
+          <h3 data-i18n="skill_cat3">Logistics &amp; Procurement</h3>
+          <div class="skill-tags"><span class="skill-tag">Supply Chain</span><span class="skill-tag">RFQ &amp; Quotations</span><span class="skill-tag">Purchase Orders</span><span class="skill-tag">Inventory Control</span><span class="skill-tag">Tenders &amp; Contracts</span></div>
+        </div>
+        <div class="skill-category">
+          <h3 data-i18n="skill_cat4">Administration &amp; Reporting</h3>
+          <div class="skill-tags"><span class="skill-tag">Office Management</span><span class="skill-tag">Report Writing</span><span class="skill-tag">Records Management</span><span class="skill-tag">Time Management</span></div>
+        </div>
+        <div class="skill-category">
+          <h3 data-i18n="skill_cat5">Communication</h3>
+          <div class="skill-tags"><span class="skill-tag">Negotiation</span><span class="skill-tag">Interpretation</span><span class="skill-tag">Dari</span><span class="skill-tag">Pashto</span><span class="skill-tag">English</span></div>
+        </div>
+        <div class="skill-category">
+          <h3 data-i18n="skill_cat6">Computer Skills</h3>
+          <div class="skill-tags"><span class="skill-tag">Microsoft Office</span><span class="skill-tag">Excel</span><span class="skill-tag">MoF Tax System</span><span class="skill-tag">Document Management</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="section services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="edu_title">Education</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎓</div>
+          <h3 data-i18n="edu1_title"></h3>
+          <p data-i18n="edu1_desc"></p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🦷</div>
+          <h3 data-i18n="edu2_title"></h3>
+          <p data-i18n="edu2_desc"></p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📘</div>
+          <h3 data-i18n="edu3_title"></h3>
+          <p data-i18n="edu3_desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT SECTION (no form — icons only) -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact_title">Let's Connect</h2>
+      <p class="contact-intro" data-i18n="contact_intro"></p>
+
+      <div class="contact-cards">
+        <a class="contact-card" href="tel:+93795052645" data-platform="phone">
+          <div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></div>
+          <div class="contact-card-body">
+            <div class="contact-card-label" data-i18n="contact_phone">Phone</div>
+            <div class="contact-card-handle" dir="ltr">+93 795 052 645</div>
+          </div>
+        </a>
+        <a class="contact-card" href="mailto:saidkhalilsadat@icloud.com" data-platform="email">
+          <div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5-8-5V6l8 5 8-5v2.2z"/></svg></div>
+          <div class="contact-card-body">
+            <div class="contact-card-label" data-i18n="contact_email">Email</div>
+            <div class="contact-card-handle" dir="ltr">saidkhalilsadat@icloud.com</div>
+          </div>
+        </a>
+        <a class="contact-card" href="mailto:saidkhalilsadat93@gmail.com" data-platform="email">
+          <div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5-8-5V6l8 5 8-5v2.2z"/></svg></div>
+          <div class="contact-card-body">
+            <div class="contact-card-label" data-i18n="contact_email2">Email</div>
+            <div class="contact-card-handle" dir="ltr">saidkhalilsadat93@gmail.com</div>
+          </div>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/said-khalil-sadat-9609b9444s" target="_blank" rel="noopener" data-platform="linkedin">
+          <div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></div>
+          <div class="contact-card-body">
+            <div class="contact-card-label" data-i18n="contact_linkedin">LinkedIn</div>
+            <div class="contact-card-handle" dir="ltr">linkedin.com/in/said-khalil-sadat-9609b9444s</div>
+          </div>
+        </a>
+        <a class="contact-card" href="https://t.me/Kalan_sadat" target="_blank" rel="noopener" data-platform="telegram">
+          <div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></div>
+          <div class="contact-card-body">
+            <div class="contact-card-label" data-i18n="contact_telegram">Telegram</div>
+            <div class="contact-card-handle" dir="ltr">@Kalan_sadat</div>
+          </div>
+        </a>
+        <a class="contact-card" href="https://www.instagram.com/said_khalil_sadat" target="_blank" rel="noopener" data-platform="instagram">
+          <div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.675a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-9.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
+          <div class="contact-card-body">
+            <div class="contact-card-label" data-i18n="contact_instagram">Instagram</div>
+            <div class="contact-card-handle" dir="ltr">@said_khalil_sadat</div>
+          </div>
+        </a>
+        <a class="contact-card" href="https://wa.me/93795052645" target="_blank" rel="noopener" data-platform="whatsapp">
+          <div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.8a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 012.89 6.99c0 5.45-4.44 9.88-9.89 9.88z"/></svg></div>
+          <div class="contact-card-body">
+            <div class="contact-card-label" data-i18n="contact_whatsapp">WhatsApp</div>
+            <div class="contact-card-handle" dir="ltr">+93 795 052 645</div>
+          </div>
+        </a>
+        <a class="contact-card" href="https://x.com/said_ksadat" target="_blank" rel="noopener" data-platform="twitter">
+          <div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
+          <div class="contact-card-body">
+            <div class="contact-card-label" data-i18n="contact_twitter">Twitter / X</div>
+            <div class="contact-card-handle" dir="ltr">@said_ksadat</div>
+          </div>
+        </a>
+
+        <div class="contact-card contact-card-static" data-platform="location">
+          <div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 7 13 7 13s7-7.75 7-13c0-4.42-3.58-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg></div>
+          <div class="contact-card-body">
+            <div class="contact-card-label" data-i18n="contact_location">Location</div>
+            <div class="contact-card-handle" data-i18n="contact_loc_val">Herat, Afghanistan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 <span data-i18n="footer_name">Said Khalil Sadat</span>. <span data-i18n="footer_rights">All rights reserved.</span></p>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Modal content injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
